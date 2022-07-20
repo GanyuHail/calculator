@@ -1,18 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap');
+
 :root {
-    --background: #f6f6f6;
-    --font: #222;
-    --border: #333;
-    --screen: #eee;
-    --calculator: #aaa;
-    --btn: #eee;
-    --btn-hover: #ddd;
-    --btn-active: #ccc;
-    --btn-red: #faa;
-    --btn-red-hover: #e99;
-    --btn-red-active: #d88;
-    --btn-blue: #aaf;
-    --btn-blue-hover: #99e;
-    --btn-blue-active: #88d;
+    --background: white;
+    --font: #300350;
+    --border: #94167F;
+    --screen: white;
+    --calculator: white;
+    --btn: #94167F;
+    --btn-hover: #153CB4;
+    --btn-active: #153FC1;
+    --btn-red: #f5a9b8;
+    --btn-red-hover: #f5a9b2;
+    --btn-red-active: #f5a9b2;
+    --btn-blue: #5bcefa;
+    --btn-blue-hover: #5bcefd;
+    --btn-blue-active: #5bcefd;
   }
   
   *,
@@ -24,7 +26,6 @@
   }
   
   html {
-    /* footer support */
     position: relative;
     min-height: 100%;
   }
@@ -32,10 +33,9 @@
   body {
     background-color: var(--background);
     color: var(--font);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Share Tech Mono', monospace;
     line-height: 1.6;
-    /* footer support */
-    margin-bottom: 100px;
+
   }
   
   button {
@@ -46,8 +46,6 @@
     cursor: pointer;
     outline: none;
   }
-  
-  /* MAIN */
   
   .main {
     display: flex;
@@ -62,7 +60,6 @@
   .calculator {
     width: 400px;
     border: 2px var(--border) solid;
-    border-radius: 15px;
     padding: 20px;
     background-color: var(--calculator);
   }
@@ -101,7 +98,7 @@
   .btn {
     padding: 20px;
     border: 2px var(--border) solid;
-    border-radius: 5px;
+    border-radius: 24px;
     background-color: var(--btn);
     font-size: 20px;
   }
@@ -138,34 +135,9 @@
     background-color: var(--btn-blue-active);
   }
   
-  /* Disables input spinners in calc screen */
   input[type='number']::-webkit-inner-spin-button,
   input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
   
-  /* FOOTER */
-  
-  .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    padding: 10px;
-    font-size: 20px;
-  }
-  
-  .fa-github {
-    color: var(--font);
-    font-size: 24px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .fa-github:hover {
-    transform: rotate(360deg) scale(1.2);
-  }
